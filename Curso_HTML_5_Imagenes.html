@@ -1,0 +1,73 @@
+<!--Resumen
+
+    Las etiquetas relacionadas a la inserción o modificación de imágenes en HTML5 son las siguientes:
+
+    <img>           Etiqueta para insertar una imagen
+        -src            Atributo de fuente o ubicación de la imagen
+        -alt            Atributo de texto alterno a la imagen
+        -width          Atributo de ancho de la imagen
+        -height         Atributo de altura de la imagen
+
+    <map><\map>     Define a la imagen como un mapa. (Se pueden colocar distintos enlaces en áreas de la imagen)
+
+    <area>          Crea el área dentro de la imagen
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>T&iacute;tulo: Coding</title>
+</head>
+<body>
+    <h1 id="home">Aprendiendo a insertar im&aacute;genes</h1>
+    <br>
+    <hr>
+    <h2>Estos son algunos <b>formatos</b> de <b>im&aacute;genes:</b></h2>
+    <br>
+    <ul>
+        <li>
+            <h3>Imagen JPG</h3>
+            <a target="_blank" href="https://twitter.com/dedaPong/status/1704869310756204709">
+                <img src="Imagen_Prueba/TEC-1_Correctional_Officer.jpg" alt="SCUM's officer" height="600">
+            </a>
+            <p>Imagen a proyectar deber&iacute;a ir aqu&iacute;. Santo dios, c&oacute;mo amo ese juego.</p>
+        </li>
+        <li>
+            <h3>Imagen PNG</h3>
+            <img src="Imagen_Prueba/resena_Spectrix.png" alter="Alguna imagen PNG" width="400">
+            <p>Imagen a proyectar deber&iacute;a ir aqu&iacute;.</p>
+        </li>
+        <li>
+            <h3>Imagen GIF</h3>
+            <img src="Imagen_Prueba/doubtFace.gif" alt="Alguna imagen GIF" width="300" height="300">
+            <p>Imagen a proyectar deber&iacute;a ir aqu&iacute;.</p>
+        </li>
+        <li>
+            <h3>Imagen referenciada</h3>
+            <a target="_blank" href="https://www.nhk.or.jp/lesson/spanish/">
+                <img src="https://i.pinimg.com/originals/22/9a/f5/229af53311a25705dc328c5f6acaaa6d.jpg" alt="anime's image" height="600">
+            </a>
+            <p>Imagen de mona china que te redirige a una escuela de japones.</p>
+        </li>
+        <li>
+            <h3>Imagen mapeada</h3>
+            <img src="https://pbs.twimg.com/media/F7G8KljWgAAUI-M?format=jpg&name=4096x4096" alt="Casa de ensue&ntilde;o" usemap="#boceto">
+            <map name="#boceto">
+                <area target="_blank" alt="woman's shirt" title="woman's shirt" href="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/ed417bbb-c54d-48ea-abf2-ec9bae72bccc.0a4a1114bc553444bdec923ab309ae7c.jpeg?odnHeight=612&amp;odnWidth=612&amp;odnBg=FFFFFF" coords="470,483,185" shape="circle">
+            </map>
+        </li>
+    </ul>
+</body>
+</html>
+
+<!--Explicación a profundidad
+
+    La implementacion de imagenes en html se realiza mediante la etiqueta <img src="" alter="" width="" height="">
+    donde los atributes corresponden a la fuente la imagen, texto alternativo en caso de falla, ancho y alto, respectivamente.
+    Es recomendable que las imágenes pertenescan al proyecto local en el que se trabaja
+
+    La etiqueta <map> permite asignar referencias dentro de una imagen dependiendo el area que se seleccione. Para ello, se utilizan
+    las coordenadas espaciales bidimensionales (pueden obtenerse por la pagina web https://www.image-map.net/).
+-->

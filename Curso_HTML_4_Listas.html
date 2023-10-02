@@ -1,0 +1,86 @@
+<!--
+    En HTML5 podemos implementar dos tipos de listas:
+    -Ordenadas: Aquellas que sigen un criterio de ordenamiento
+        1.  Primer Item.
+        2.  Segundo Item.
+        3.  Tercer Item.
+        4.  Cuarto Item.
+    -Desordenadas: son aquellas que no estan restringidas a un orden secuencial
+        ■   Item.
+        ■   Item.
+        ■   Item.
+        ■   Item.
+-->
+
+<!--
+    Estructura de lista ordenada:
+    <ol>
+        <li>Primer Item</li>
+        <li>Segundo Item</li>
+        <li>Tercer Item</li>
+        <li>Cuarto Item</li>
+    </ol>
+-->
+
+<!--
+    Estructura de lista desordenada:
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Uso de Listas</title>
+    </head>
+
+    <body>
+        <h1>Uso de listas ordenadas y no ordenadas</h1>
+        <img src="Imagen_Prueba/doubtFace.gif" alt="Doubt Face" width="300" height="300">
+        <hr>
+
+        <h2>Lista no ordenada:</h2>
+        <ul type="square"> <!--En 'type' el valor por defecto es el punto centrico para encabezar la lista-->
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+        <br>
+
+        <h2>Lista ordenada:</h2>
+        <ol type="A"> <!--Por defecto, ordena la lista con numeros-->
+            <li>Primer Item</li>
+            <li>Segundo Item</li>
+            <li>Tercer Item</li>
+            <li>Cuarto Item</li>
+        </ol>
+        <br>
+
+        <h2>Lista de descripcion:</h2>
+        <dl>
+            <dt>HTML</dt>
+                <dd>html no es un lenguaje de programacion</dd>
+            <dt>CSS</dt>
+                <dd>CSS tampoco es un lenguaje de programacion.</dd>
+            <dt>JavaScript</dt>
+                <dd>JavaScript si es un lenguaje de programacion</dd>
+        </dl>
+        <hr>
+    </body>
+</html>
+
+<!--
+    En resumen, aprendimos a manejar las siguientes etiquetas:
+    <ul></ul>   Lista desordenada
+    <ol></ol>   Lista ordenada
+    <li></li>   Item de la lista
+    <dl></<dl>  Lista de descripcion
+    <dt></dt>   Termino
+    <dd></dd>   Descripcion del termino
+-->
