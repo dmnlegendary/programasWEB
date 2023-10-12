@@ -9,19 +9,20 @@
     <h1>Formularios</h1>
     <hr color="#00FF00" width="200%" size="10">
 
-    <form action="">
+    <form action=""> <!--Aqui se coloca la direccion del script para el forms, en este caso al no haber se deja en blanco, un ejemplo seria action="myscript.php"-->
+    <!--Tambien se emplean los metodos "GET" o "POST" para el manejo de datos en un archivo posterior-->
     <fieldset>
 
         <legend>Datos del usuario</legend>
 
             <label for="Name">Nombre:</label> <br>
-            <input type="text" id="Name" name="Name"> <br>
+            <input type="text" id="Name" name="Name" placeholder="Ingresa aqu&iacute; tu nombre"> <br>
 
             <label for="">Correo:</label><br>
-            <input type="email" id="" name="email"><br>
+            <input type="email" id="" name="email" required><br>
 
             <label for="pass">Contrase&ntilde;a</label><br>
-            <input type="password" id="pass" name="pass"><br>
+            <input type="password" id="pass" name="pass" autofocus required><br>
 
             <label for="birthday">Fecha de nacimiento:</label><br>
             <input type="date" id="birthday" name="birthday"><br>
@@ -72,6 +73,7 @@
 
     </fieldset>
     <br>
+
     <input type="submit" name="listo">
     <input type="reset" name="borrar">
     </form>

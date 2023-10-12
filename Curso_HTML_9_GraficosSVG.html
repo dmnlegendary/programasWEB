@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--Definición del esquema de codificación-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Establecer puerto de vista para el usuario-->
+        <meta name="description" content="HTML5 Document"> <!--Descripción del programa-->
+        <meta name="keywords" content="HMTL, CSS, JavaScript, BackEnd, FrontEnd"> <!--Palabras clave del programa-->
+        <link rel="icon" type="image/png" href="Imagen_Prueba/R.png"> <!--ícono de la página-->
+    </head>
+    <body>
+        <h1>Uso e implementaci&oacute;n de gr&aacute;ficos SVG (Scalable Vector Graphics)</h1>
+        <h2>Colocac&oacute;n de un c&iacute;rculo y su radio</h2>
+        <svg width="500" height="500">
+            <circle cx="150" cy="150" r="80" stroke="blue" stroke-width="4" fill="pink"></circle> <!--Declaración de un círculo en formato SVG-->
+            <!--Los términos cx y cy son la ubicación del origen-->
+            <!--"r" se define como el radio-->
+            <!--"stroke" el color del borde-->
+            <!--"stroke-width" el ancho del borde-->
+            <!--"fill" el color al interior del círculo-->
+            <line x1="150" y1="150" x2="230" y2="150" stroke="blue" stroke-width="4"></line> <!--Declaraciónde una linea-->
+            <!--"x1" y "x2" son puntos de inicio y final de la linea con respecto al largo-->
+            <!--"y1" y "y2" son puntos de inicio y final de la linea con respecto al ancho-->
+            <text x="150" y="140" fill="red">R = 80</text>
+        </svg>
+        <hr color="FF0000" size="10" width="200%">
+
+        <h2>Polil&iacute;nea</h2>
+        <svg height="300" width="300">
+            <polyline points="0,40 40,40 40,0 80,0 80,80 0,80 0,40" fill="white" stroke="blue" stroke-width="4"></polyline>
+            <!--"points" refiere a las coordenadas en las que ira trazando el rayado de la imagen-->
+        </svg>
+        <hr color="FF0000" size="10" width="200%">
+
+        <h2>Usando PATH para trazar una curva</h2>
+        <svg height="500" width="500">
+            <circle cx="100" cy="350" r="3" />
+            <circle cx="250" cy="50" r="3" />
+
+            <text x="100" y="350" dx="-20">A</text>
+            <text x="250" y="50" dx="10">B</text>
+
+            <path d="M 100 350 Q 80 -25 250 50" stroke="blue" stroke-width="4" fill="none"></path>
+            <!--"d" permite colocar M (valores de inicio) (valores que alteran la curva) (valores finales)-->
+        </svg>
+        <hr color="FF0000" size="10" width="200%">
+
+        <h2>Imagen SVG de internet</h2>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
+            <g>
+	            <polygon points="17.463,6.538 6.739,6.538 0.201,0 23.999,0 23.999,23.799 17.463,17.261  "/>
+	            <polygon points="6.731,17.269 6.731,7.848 0.001,14.579 0.001,24 9.42,24 16.15,17.269  "/>
+            </g>
+        </svg>
+    </body>
+</html>
+
+<!--
+    <path d=""/>        M = mover
+                        L = línea
+                        H = línea horizontal
+                        V = línea vertical
+                        C = curva
+                        S = curva suave
+                        Q = curva cuadrática
+                        T = curva cuadrática suave
+                        A = arco elíptico
+                        Z = cerrar el path
+-->
